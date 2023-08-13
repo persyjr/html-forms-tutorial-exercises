@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+		<style>
+			table,
+			th,
+			td {
+				border: 1px solid black;
+			}
+			th {
+				background-color: rgb(154, 154, 239);
+			}
+			td {
+				width: 150px;
+			}
+			.combinada {
+				width: 98%;
+				height: 50px;
+			}
+			.container {
+				display: flex;
+				justify-content: center;
+			}
+		</style>
+	</head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>4Geeks Academy</title>
-</head>
-
-<body>
-    <form>
-        <!-- your code here -->
-    </form>
-</body>
-
+	<body>
+		<form>
+			<!-- your code here -->
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>
+						<input type="text" />
+					</td>
+				</tr>
+				<tr>
+					<td>Eye color</td>
+					<td>
+						<select name="select" id="">
+							<option value="green">green</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Check all thath apply</td>
+					<td>
+						<input type="checkbox" id="feet" value="" />
+						<label for="feet">Over 6 feet tall</label><br />
+						<input type="checkbox" id="pounds" value="" />
+						<label for="pounds">Over 200 pounds</label><br />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						Describe your athletic abillity
+						<input class="combinada" type="text" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="container">
+							<div class="button"><button>Enter my information</button></div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
 </html>
